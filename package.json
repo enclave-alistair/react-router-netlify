@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "description": "A simple example of react router",
+  "private": true,
+  "dependencies": {
+    "react-router-dom": "latest",
+    "react-scripts": "2.0.0",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.14.5",
+    "netlify-plugin-csp-generator": "^1.4.0",
+    "webpack": "^5.43.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

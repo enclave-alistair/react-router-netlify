@@ -1,0 +1,25 @@
+[[redirects]]
+  from = "/*"
+  to = "index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+
+[[plugins]]
+package = "netlify-plugin-csp-generator"
+
+  [plugins.inputs]
+  buildDir = "build"
+  disableGeneratedPolicies = ["styleSrc"]
+
+  [plugins.inputs.policies]
+    frameAncestors = "'self'"
+    scriptSrc = "'self'"
+    styleSrc = "'self'"
+    objectSrc = "'none'"
+    fontSrc = "'self'"
+    formAction = "'none'"
+    baseUri = "'self'"

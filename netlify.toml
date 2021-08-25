@@ -13,6 +13,7 @@ package = "netlify-plugin-csp-generator"
 
   [plugins.inputs]
   buildDir = "dist"
+  generateForAllFiles = true
   disableGeneratedPolicies = ["styleSrc"]
 
   [plugins.inputs.policies]
